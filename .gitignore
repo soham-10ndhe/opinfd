@@ -1,0 +1,66 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# =========================
+# Virtual environments
+# =========================
+.env/
+venv/
+env/
+opinfd_env/
+
+# =========================
+# Jupyter / IDE
+# =========================
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Model & results (IMPORTANT)
+# =========================
+*.pth
+*.pt
+*.ckpt
+
+# Ignore all results folders inside cases
+cases/**/results/
+
+# Images generated during runs (optional)
+*.png
+
+# =========================
+# Data (if added later)
+# =========================
+data/
+datasets/
+
+# =========================
+# Build / packaging
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.swp

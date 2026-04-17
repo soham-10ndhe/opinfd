@@ -1,0 +1,18 @@
+case_name: "1D_Poisson_RAR"
+
+domain:
+  x_min: -1.0
+  x_max: 1.0
+
+N_col: 8000
+N_bc: 100
+
+# Stage 2 split
+epochs_adam: 5000
+epochs_lbfgs: 500
+
+lr: 0.001
+
+rar_points: 2000
+
+target_error: 1e-3
