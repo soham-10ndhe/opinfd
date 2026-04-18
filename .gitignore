@@ -34,7 +34,7 @@ Thumbs.db
 *.log
 
 # =========================
-# Model & results (IMPORTANT)
+# Model weights & results
 # =========================
 *.pth
 *.pt
@@ -43,7 +43,7 @@ Thumbs.db
 # Ignore all results folders inside cases
 cases/**/results/
 
-# Images generated during runs (optional)
+# Generated plots
 *.png
 
 # =========================

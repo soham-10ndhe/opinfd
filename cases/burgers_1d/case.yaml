@@ -1,0 +1,22 @@
+case_name: "1D_Poisson_RAR"
+
+pde_type: "poisson_1d"
+
+domain:
+  x_min: -1.0
+  x_max: 1.0
+
+N_col: 8000
+N_bc: 100
+
+epochs_adam: 5000
+epochs_lbfgs: 500
+
+lr: 0.001
+
+rar_rounds: 3
+rar_points: 2000
+rar_pool_size: 20000
+rar_refine_epochs: 500
+
+target_error: 1e-3
