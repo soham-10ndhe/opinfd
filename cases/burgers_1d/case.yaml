@@ -1,22 +1,27 @@
-case_name: "1D_Poisson_RAR"
+case_name: "1D_Burgers_RAR"
 
-pde_type: "poisson_1d"
+pde_type: "burgers_1d"
+
+# Viscosity (nu = 0.01/pi is the classic PINN benchmark)
+nu: 0.003183098861837907   # 0.01 / pi
 
 domain:
   x_min: -1.0
-  x_max: 1.0
+  x_max:  1.0
+  t_min:  0.0
+  t_max:  1.0
 
-N_col: 8000
-N_bc: 100
+N_col: 10000
+N_bc:  200
 
-epochs_adam: 5000
-epochs_lbfgs: 500
+epochs_adam: 8000
+epochs_lbfgs: 1000
 
 lr: 0.001
 
 rar_rounds: 3
 rar_points: 2000
 rar_pool_size: 20000
-rar_refine_epochs: 500
+rar_refine_epochs: 1000
 
-target_error: 1e-3
+target_error: 1e-2
